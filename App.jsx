@@ -23,6 +23,7 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
+          Just making sure my git is set up properly
         </p>
       </div>
       <p className="read-the-docs">
