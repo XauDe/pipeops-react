@@ -22,7 +22,12 @@ function App() {
           count is {count}
         </button>
         <p>
+<<<<<<< HEAD
           Edit <code>src/App.jsx</code> and save to test HMR yim
+=======
+          Edit <code>src/App.jsx</code> and save to test HMR
+          Just making sure my git is set up properly hmm
+>>>>>>> 7925aa38d09565db2222094a386b72080b1712dd
         </p>
       </div>
       <p className="read-the-docs">
