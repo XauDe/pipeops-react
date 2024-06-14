@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-left">
-        <h1>Welcome to PickSkill</h1>
+        <h1>Welcome to PickSkills</h1>
         <p>Plan and prioritize your skill development with ease.</p>
       </div>
       <div className="login-right">

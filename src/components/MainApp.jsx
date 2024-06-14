@@ -5,7 +5,7 @@ import './MainApp.css';
 const MainApp = () => {
   return (
     <div className="main-app">
-      <h1>Essentials App</h1>
+      <h1>PickSkills</h1>
       <Slider />
     </div>
   );

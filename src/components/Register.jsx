@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <div className="register-left">
-        <h1>PickSkill</h1>
+        <h1>PickSkills</h1>
         <p>Start planning and prioritizing your skill development journey.</p>
       </div>
       <div className="register-right">
