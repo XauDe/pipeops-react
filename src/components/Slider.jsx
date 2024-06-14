@@ -9,6 +9,7 @@ import './Slider.css';
 const Slider = () => {
   const [phase, setPhase] = useState(0); // Start from 0 for the homepage
   const [taskCompleted, setTaskCompleted] = useState(false);
+  const [hasSchedule, setHasSchedule] = useState(true); // Placeholder for schedule status
 
   const handleNext = () => {
     setPhase(prevPhase => (prevPhase < 4 ? prevPhase + 1 : 0)); // Go back to 0 (homepage) after Phase 4
@@ -25,7 +26,7 @@ const Slider = () => {
 
   return (
     <div className="slider-container">
-      {phase === 0 && <Homepage onGetStarted={handleGetStarted} />}
+      {phase === 0 && <Homepage onGetStarted={handleGetStarted} hasSchedule={hasSchedule} />}
       {phase === 1 && <Phase1 onCompleteTask={completeTask} />}
       {phase === 2 && <Phase2 onCompleteTask={completeTask} />}
       {phase === 3 && <Phase3 onCompleteTask={completeTask} />}
