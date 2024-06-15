@@ -1,53 +1,74 @@
 .homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    padding: 20px; /* Add padding to ensure content doesn't touch screen edges */
-    box-sizing: border-box; /* Include padding in element's total width and height */
-  }
-  
-  .schedule-section {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 800px; /* Limit max width for better readability */
-    overflow-y: auto; /* Enable vertical scrolling if needed */
-  }
-  
-  .schedule-table-container {
-    max-height: 60vh; /* Limit the table's height */
-    overflow-y: auto; /* Enable vertical scrolling if the table exceeds the height */
-  }
-  
-  .schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-  }
-  
-  .schedule-table th, .schedule-table td {
-    border: 1px solid white;
-    padding: 8px;
-  }
-  
-  .schedule-table th {
-    background-color: #333;
-    color: white;
-  }
-  
-  .schedule-table td {
-    background-color: #444;
-  }
-  
-  button {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: white;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 36px; /* Increase the font size */
+  margin: 0;
+}
+
+header h4 {
+  font-size: 24px; /* Increase the font size */
+  margin: 0;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 18px; /* Increase the font size */
+  margin: 20px 0;
+}
+
+.schedule-section {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.schedule-table-container {
+  width: 100%;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #222;
+  color: white;
+}
+
+.schedule-table td {
+  background-color: #111;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}

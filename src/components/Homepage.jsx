@@ -4,9 +4,15 @@ import './Homepage.css';
 const Homepage = ({ onGetStarted, hasSchedule }) => {
   return (
     <div className="phase homepage">
-      <h2>Welcome to the Essentials App</h2>
-      <p>Your journey to essentialism and skill planning begins here.</p>
-      <button onClick={onGetStarted}>Get Started</button>
+
+      <div style={{marginTop:30}}> 
+      <h2 style={{fontSize:34}}>PickSkills</h2>
+      <h4 style={{fontSize:20}}>Make use of effective strategies for managing multiple interests and skills</h4>
+      <p>Develop a personal schedule and roadmap for making significant progress towards multiple skills without feeling overwhelmed! </p>
+
+      </div>
+
+      {/* returning  user*/}
       <div className="schedule-section">
         {hasSchedule ? (
           <div>
@@ -35,8 +41,15 @@ const Homepage = ({ onGetStarted, hasSchedule }) => {
             </div>
           </div>
         ) : (
-          <p>You don't have a schedule yet. Create one by clicking "Get Started".</p>
+          <div>
+            {/*new user */}
+            <p>You don't have a schedule yet. Create one by clicking "Get Started".</p>
+            <button onClick={onGetStarted}>Get Started</button>
+
+          </div>
+          
         )}
+
       </div>
     </div>
   );

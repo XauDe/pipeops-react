@@ -1,9 +1,52 @@
-.main-app {
+
+  
+  .main-app-container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling */
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+  }
+  
+  /* Style for Webkit browsers (Chrome, Safari) */
+  .main-app-container::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+  }
+  
+  .main-app-container::-webkit-scrollbar-track {
+    background: #000000; /* Background color of the scrollbar track */
+  }
+  
+  .main-app-container::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #ffffff; /* Space around the thumb */
+  }
+  
+  /* Style for Firefox */
+  .main-app-container {
+    scrollbar-width: thin; /* Make scrollbar thinner */
+    scrollbar-color: #000000 #ffffff; /* Thumb and track color */
+  }
+  
+  /* Scrollbar styling for the Slider component */
+  .slider-container::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+  }
+  
+  .slider-container::-webkit-scrollbar-track {
+    background: #000000; /* Background color of the scrollbar track */
+  }
+  
+  .slider-container::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #000000; /* Space around the thumb */
+  }
+  
+  .slider-container {
+    scrollbar-width: thin; /* Make scrollbar thinner */
+    scrollbar-color:#ffffff #000000 ; /* Thumb and track color */
   }
   
